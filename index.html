@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Jeremy Poter</title>
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+		<link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link href='http://fonts.googleapis.com/css?family=Yeseva+One|Josefin+Sans:100,300,400' rel='stylesheet' type='text/css'>
+
+		<style>
+			html { font-size: 62.5%; }
+
+			html, body { margin: 0; padding: 0; }
+
+			body { font-size: 1.6rem; text-rendering: optimizeLegibility; }
+
+			section {
+				margin: 0;
+				padding: 0;
+				opacity: 0.85;
+				text-align: center;
+				min-height: 600px;
+			}
+
+			section:not(.one) {
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-flow: column wrap;
+				flex-flow: column wrap;
+				-webkit-justify-content: flex-end;
+				justify-content:flex-end;
+			}
+
+			h1 {
+				margin: 0; padding: 0;
+				font-family: 'Yeseva One', cursive; 
+				font-weight: 400; 
+				font-size: 6rem;
+				color: #fff;
+			}
+
+			h2 {
+				margin: 0; padding: 0;
+				color: #eee;
+				font-family: 'Josefin Sans', sans-serif;
+				font-weight: 400;
+				font-size: 4rem;
+				letter-spacing: 4px;
+				line-height: 1.6;
+				color: #fff;
+			}
+
+			p {
+				margin: 0; padding: 0;
+				color: #eee;
+				font-family: 'Josefin Sans', sans-serif;
+				font-size: 2rem;
+				font-weight: 300;
+				letter-spacing: 1px;
+				line-height: 1.2;
+				color: #fff;
+
+				margin-top: 2rem;
+			}
+
+			.one {
+				background: url(img/landing.jpg) no-repeat center center; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+
+			.landing {
+				position: relative;
+				top: 35%;
+				left: 0;
+			}
+
+			.landing h2 {
+				letter-spacing: 2px;
+				margin-top: 3rem;
+			}
+
+			/* Shift section up for mobile */
+			@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+				section:not(.one) {
+					display: -webkit-flex;
+					display: flex;
+					-webkit-flex-flow: column wrap;
+					flex-flow: column wrap;
+					-webkit-justify-content: center;
+					justify-content:center;
+				}
+
+				.landing { top: 15%; } 
+			}
+
+			.two {
+				background: url(img/axeyouaquestion.jpg) no-repeat center; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+
+			.three {
+				background: url(img/wowheisfamoustoo.jpg) no-repeat center center; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+
+			.four {
+				background: url(img/socuteawww.jpg) no-repeat center center; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+
+			.five {
+				background: url(img/coolguy.jpg) no-repeat center center; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+
+			.overlay {
+				margin: 3rem;
+	            width: 90%;
+	            max-width: 500px;
+	            background-color: rgba(22,149,163,0.6);
+	            overflow: visible;
+	            color: #222; 
+
+	            border-radius: 20px;
+	            padding: 24px 48px;
+			}
+
+			@media only screen and (max-width: 650px) {
+				.overlay { margin: 3rem auto; padding: 5vh 2.5vw; }
+			}
+
+			@media only screen and (max-width: 550px) {
+				html { font-size: 58%; }
+			}		
+
+			@media only screen and (max-width: 450px) {
+				html { font-size: 52.5%; }
+			}
+
+			@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+				html { font-size: 42%; }
+				.overlay { margin: 0 auto; padding: 5vh 2.5vw; }
+			}		
+		</style>
+		<script>
+			$(document).ready(function(){
+				$(".content-container").onepage_scroll({
+					sectionContainer: "section",
+					responsiveFallback: 1000,
+					loop: true
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="content-container">
+			<section class="one">
+				<div class="landing">
+					<h1>Optimist. Philanthropist. Jackhammer.</h1>
+					<h2>Jeremy Poter</h2>
+				</div>
+			</section>
+			<section class="two">
+				<div class="overlay">
+					<h2>Looks. Humor. Intellect. He has it all.</h2>
+					<p>It's a rarity for a human to be so skilled and exceptional in every way, yet remain so grounded. Then again, to call him human is to call an Aston Martin 'a car'.</p>
+				</div>
+			</section>
+			<section class="three">
+				<div class="overlay">
+					<h2>He's famous too?!?</h2>
+					<p>Despite attaining fame — a feat that corrupts even the most modest of souls — His presence is truly a present.</p>
+				</div>
+			</section>
+			<section class="four">
+				<div class="overlay">
+					<h2>Awwww <3 <3 </h2>
+					<p>They go together like toothbrush and toothpaste, hops and malts, crying and children. A relationship that simultaneously creates envy and inspires hope.</p>
+				</div>
+			</section>
+			<section class="five">
+				<div class="overlay">
+					<h2>What's there not to love really?</h2>
+					<p>Really, just look at him. He has the attraction of a dwarf star. Every fiber of his existence radiates positivity and youthful, pleasant energy.</p>
+				</div>
+			</section>
+		</div>
+
+	</body>
+</html>
